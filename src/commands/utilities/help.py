@@ -7,7 +7,7 @@ AVATAR_URL = (
     f"https://cdn.discordapp.com/avatars/{CLIENT_ID}/1eee7c7e0bba69ddfe8f8c3136c1bc89.png?size=4096&ignore=true)."
 )
 INVITE_URL = f"https://discord.com/oauth2/authorize?client_id={CLIENT_ID}"
-SUPPORT_URL = "https://discord.gg/zfR7NAhbAv"
+SUPPORT_URL = "https://discord.gg/{URL FOR DISCORD SERVER}"
 DEVELOPER_ID = int(os.getenv("DEVELOPER_ID", "0"))
 
 
