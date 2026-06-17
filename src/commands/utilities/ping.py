@@ -1,6 +1,9 @@
 import discord
 from discord.ext import commands
-
+CLIENT_ID = 
+AVATAR_URL=(
+    f"https://cdn.discordapp.com/avatars/{CLIENT_ID}/1eee7c7e0bba69ddfe8f8c3136c1bc89.png?size=4096&ignore=true)."
+)
 class Ping(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
@@ -32,8 +35,7 @@ class Ping(commands.Cog):
         api_ping = round(self.bot.latency * 1000)
 
         embed = discord.Embed(
-            title="🏓 Pong!",
-            color=discord.Color.from_rgb(255, 255, 0),
+            color=discord.Color.yellow(),
             timestamp=discord.utils.utcnow()
         )
 
@@ -48,7 +50,7 @@ class Ping(commands.Cog):
             value=f"`{api_ping} ms`",
             inline=True
         )
-
+        embed.set_author(name="Pong!", icon_url=AVATAR_URL)
         await interaction.edit_original_response(
             content=None,
             embed=embed
