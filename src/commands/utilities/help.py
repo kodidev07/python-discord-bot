@@ -2,7 +2,7 @@ import os
 import discord
 from discord.ext import commands
 
-CLIENT_ID = 1513184448177373244
+CLIENT_ID = 
 AVATAR_URL = (
     f"https://cdn.discordapp.com/avatars/1516455736543285328/1eee7c7e0bba69ddfe8f8c3136c1bc89.png?size=4096&ignore=true)."
 )
